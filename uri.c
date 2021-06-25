@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main(){
 
-    double A, B, MEDIA;
-    scanf("%lf %lf", &A, &B);
+    float A, B, C, MEDIA;
+    scanf("%f %f %f", &A, &B, &C);
+    MEDIA = ((A * 2) + (B * 3) + (C * 5)) / (2 + 3 + 5);
+    printf("MEDIA = %0.1f\n", MEDIA);
 
-    MEDIA = ((A*3.5)+(B*7.5))/(3.5+7.5);
-    printf("MEDIA = %0.5lf\n", MEDIA);
 
     return 0;
 }
