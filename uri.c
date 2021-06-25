@@ -1,11 +1,12 @@
 #include <stdio.h>
 int main(){
 
-    int employeeNumber, workedHour;
-    float perHourSalary, SALARY;
-    scanf("%d %d %f", &employeeNumber, &workedHour, &perHourSalary);
-    SALARY = perHourSalary * workedHour;
-    printf("NUMBER = %d\nSALARY = U$ %0.2f\n", employeeNumber, SALARY);
+    char name;
+    double fixedSalary, percentOfSale, TOTAL;
+    scanf("%s %lf %lf" ,&name, &fixedSalary, &percentOfSale);
+    TOTAL = fixedSalary + ((percentOfSale * 15) / 100);
+    printf("TOTAL = R$ %0.2lf\n",TOTAL);
+
 
     return 0;
 }
