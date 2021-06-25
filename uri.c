@@ -1,10 +1,11 @@
 #include <stdio.h>
 int main(){
 
-    int A, B, C, D, DIFERENCA;
-    scanf("%d %d %d %d",&A,&B,&C,&D);
-    DIFERENCA = (A * B) - (C * D);
-    printf("DIFERENCA = %d\n" , DIFERENCA);
+    int employeeNumber, workedHour;
+    float perHourSalary, SALARY;
+    scanf("%d %d %f", &employeeNumber, &workedHour, &perHourSalary);
+    SALARY = perHourSalary * workedHour;
+    printf("NUMBER = %d\nSALARY = U$ %0.2f\n", employeeNumber, SALARY);
 
     return 0;
 }
